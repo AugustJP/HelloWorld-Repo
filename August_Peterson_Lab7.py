@@ -67,5 +67,15 @@ for i in mode_dict:
 		n = i
 print(f"Mode is {n}")
 
+mode = 0
 
-
+mult = False
+for i in mode_dict:
+	if mode_dict[i] > mode:
+		mode = mode_dict[i]
+		data_set_3 = i
+	elif mode_dict[i] == mode:
+		print(f"{mode_max} and {i} are both modes")
+		mult = True
+if mult == False:
+	print(mode_max)
